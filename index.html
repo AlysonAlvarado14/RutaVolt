@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RUTAVOLT — Motos y Equipamiento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="#" class="logo">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2 7 17h7l-3 13 14-17h-8l3-11z" fill="#2F6FED"/>
+      </svg>
+      RUTA<span>VOLT</span>
+    </a>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="catalogo.html">Motos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="equipamiento.html">Accesorios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-icons">
+      <a href="#" aria-label="Cuenta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1.6-4 4.2-6 7-6s5.4 2 7 6"/></svg>
+      </a>
+      <a href="#" class="cart-wrap" aria-label="Carrito">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20.5" r="1.2"/><circle cx="17.5" cy="20.5" r="1.2"/></svg>
+        <span class="cart-badge">2</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Colección 2026</span>
+      <h1>TU PRÓXIMA<br>RUTA <em>TE ESPERA</em></h1>
+      <p class="lede">Motos pensadas para rodar, no para quedarse quietas. Ingeniería precisa, diseño limpio y la energía justa para cada camino.</p>
+      <div class="hero-ctas">
+        <a href="catalogo.html" class="btn btn-primary">Descubrir más</a>
+        <a href="ofertas.html" class="btn btn-ghost">Ver ofertas</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>18</b><span>Modelos en stock</span></div>
+        <div><b>24</b><span>Cuotas sin interés</span></div>
+        <div><b>4.9</b><span>Calificación promedio</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="speed-lines"></div>
+      <div class="glow"></div>
+      <img src="img/ee.webp" alt="Moto eléctrica RUTAVOLT en carretera" class="hero-bike">
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h11v10H3zM14 11h4l3 3v3h-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg>
+      <span>Envíos a todo el país</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 5 6v6c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <span>Garantía de fábrica</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 9.5a3 3 0 1 1 4 2.8c-.8.3-1.3.9-1.3 1.7v.5M12 17h.01"/></svg>
+      <span>Servicio técnico certificado</span>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6a2 2 0 0 1 2-2h2l1.5 4-2 1.3a11 11 0 0 0 5.2 5.2L14 12.5 18 14v2a2 2 0 0 1-2 2C9.4 18 4 12.6 4 6z"/></svg>
+      <span>Atención 24/7</span>
+    </div>
+  </div>
+</div>
+
+<section class="modelos" id="modelos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Catálogo</span>
+        <h2>Modelos populares</h2>
+      </div>
+      <div class="carousel-nav">
+        <a href="#m1" class="car-btn" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></a>
+        <a href="#m4" class="car-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <article class="model-card corner-frame" id="m1">
+          <div class="art">
+            <span class="tag">04 modelos</span>
+            <img src="img/deportiva.webp" alt="Moto deportiva en pista de carreras" class="model-img">
+          </div>
+          <div class="body">
+            <h3>Deportivas</h3>
+            <p>Máxima velocidad, mínima resistencia.</p>
+            <div class="row">
+              <a href="modelo.html?id=deportivas" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card corner-frame" id="m2">
+          <div class="art">
+            <span class="tag">06 modelos</span>
+            <img src="img/trail.webp" alt="Moto trail en camino de tierra" class="model-img">
+          </div>
+          <div class="body">
+            <h3>Trail / Adventure</h3>
+            <p>Para caminos que no están en el mapa.</p>
+            <div class="row">
+              <a href="modelo.html?id=trail" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card corner-frame" id="m3">
+          <div class="art">
+            <span class="tag">05 modelos</span>
+            <img src="img/naked.webp" alt="Moto naked en ciudad" class="model-img">
+          </div>
+          <div class="body">
+            <h3>Naked</h3>
+            <p>Diseño crudo, potencia pura.</p>
+            <div class="row">
+              <a href="modelo.html?id=naked" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="model-card corner-frame" id="m4">
+          <div class="art">
+            <span class="tag">03 modelos</span>
+            <img src="img/scoters.webp" alt="Scooter eléctrico en ciudad" class="model-img">
+          </div>
+          <div class="body">
+            <h3>Scooters</h3>
+            <p>Agilidad urbana sin esfuerzo.</p>
+            <div class="row">
+              <a href="modelo.html?id=scooters" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="carousel-dots">
+        <a href="#m1" aria-label="Ir a Deportivas"></a>
+        <a href="#m2" aria-label="Ir a Trail"></a>
+        <a href="#m3" aria-label="Ir a Naked"></a>
+        <a href="#m4" aria-label="Ir a Scooters"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promo" id="ofertas">
+  <div class="promo-cell offer">
+    <span class="eyebrow">Tiempo limitado</span>
+    <div class="big-num">35%<span>OFF</span></div>
+    <p>En modelos seleccionados de la temporada. Válido en compras de contado y financiadas.</p>
+    <a href="ofertas.html" class="btn btn-light">Ver ofertas</a>
+  </div>
+  <div class="promo-cell finance">
+    <span class="eyebrow">Financiación propia</span>
+    <h3>Planes a tu medida</h3>
+    <p>Hasta 24 cuotas sin interés. Aprobación rápida y sin letra chica.</p>
+    <a href="ofertas.html#financiacion" class="btn btn-ghost">Más información</a>
+  </div>
+</section>
+
+<section class="gear" id="equipo">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Equipamiento</span>
+        <h2>Vestí tu ruta</h2>
+      </div>
+      <div class="carousel-nav">
+        <a href="#e1" class="car-btn" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></a>
+        <a href="#e4" class="car-btn" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <article class="gear-card" id="e1">
+          <div class="art">
+              <img src="img/casco.webp" alt="Casco de moto en exhibición" class="gear-img">
+          </div>
+          <h4>Cascos</h4>
+          <p>Protección certificada</p>
+          <a href="equipamiento.html#cascos" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;display:inline-block;vertical-align:middle"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="gear-card" id="e2">
+          <div class="art">
+            <img src="img/chaqueta.webp" alt="Chaqueta de moto en exhibición" class="gear-img">
+          </div>
+          <h4>Chaquetas</h4>
+          <p>Resistentes al viento y la lluvia</p>
+          <a href="equipamiento.html#chaquetas" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;display:inline-block;vertical-align:middle"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="gear-card" id="e3">
+          <div class="art">
+            <img src="img/guantes.webp" alt="Guantes de moto en exhibición" class="gear-img">
+          </div>
+          <h4>Guantes</h4>
+          <p>Agarre y control en cada giro</p>
+          <a href="equipamiento.html#guantes" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;display:inline-block;vertical-align:middle"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <article class="gear-card" id="e4">
+          <div class="art">
+            <img src="img/botas.webp" alt="Botas de moto en exhibición" class="gear-img">
+          </div>
+          <h4>Botas</h4>
+          <p>Soporte para largas distancias</p>
+          <a href="equipamiento.html#botas" class="more-link">Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;display:inline-block;vertical-align:middle"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+      </div>
+      <div class="carousel-dots">
+        <a href="#e1" aria-label="Ir a Cascos"></a>
+        <a href="#e2" aria-label="Ir a Chaquetas"></a>
+        <a href="#e3" aria-label="Ir a Guantes"></a>
+        <a href="#e4" aria-label="Ir a Botas"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lower" id="contacto">
+  <div class="wrap">
+    <div class="testimonials">
+      <span class="eyebrow" style="margin-bottom:18px;display:inline-flex">Clientes RutaVolt</span>
+      <h2 style="font-family:var(--font-display);font-weight:800;font-size:32px;text-transform:uppercase;margin-bottom:28px;">Lo que dicen al rodar</h2>
+
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"Compré mi primera moto acá y la atención fue increíble de principio a fin. Me explicaron cada detalle sin apuro."</p>
+        <footer>— Martín R., cliente verificado</footer>
+      </div>
+
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"Excelente variedad y el equipo me ayudó a elegir justo lo que necesitaba para mis rutas de fin de semana."</p>
+        <footer>— Carla G., cliente verificada</footer>
+      </div>
+
+      <div class="t-card">
+        <div class="stars">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.5 6.2L10 14.9 4.3 18l1.5-6.2L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"El servicio técnico es rápido y siempre transparente con los costos. Volvería sin dudarlo."</p>
+        <footer>— Diego F., cliente verificado</footer>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <span class="eyebrow" style="margin-bottom:14px;display:inline-flex">No te quedes atrás</span>
+      <h3>Sumate a RutaVolt</h3>
+      <p>Recibí ofertas, lanzamientos y novedades antes que nadie, directo a tu correo.</p>
+      <form class="news-form" onsubmit="return false;">
+        <input type="email" placeholder="tu@email.com" required>
+        <button class="btn btn-primary" type="submit">Suscribirme</button>
+      </form>
+      <p class="news-fine">Sin spam. Cancelá cuando quieras.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo">
+          <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2 7 17h7l-3 13 14-17h-8l3-11z" fill="#2F6FED"/>
+          </svg>
+          RUTA<span style="color:#2F6FED">VOLT</span>
+        </a>
+        <p>Motos, equipamiento y financiación pensados para quienes no se quedan quietos. Energía, ruta y diseño en cada modelo.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Compañía</h5>
+        <ul>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Aviso legal</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Encontrá tu sucursal</a></li>
+          <li><a href="#">Trabajá con nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 RUTAVOLT. Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V5.5h-3C11.8 5.5 10 7.3 10 9.5V12H8v3.5h2V22h3.5v-6.5H16l.5-3.5h-3V9.7c0-.5.4-.7.5-.7z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

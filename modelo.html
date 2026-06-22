@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo — RUTAVOLT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav-row">
+        <a href="index.html" class="logo">
+          <svg
+            class="mark"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M18 2 7 17h7l-3 13 14-17h-8l3-11z" fill="#2F6FED" />
+          </svg>
+          RUTA<span>VOLT</span>
+        </a>
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html" class="active">Motos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="equipamiento.html">Accesorios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons">
+          <a href="#" aria-label="Cuenta">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <circle cx="12" cy="8" r="3.4" />
+              <path d="M5 20c1.6-4 4.2-6 7-6s5.4 2 7 6" />
+            </svg>
+          </a>
+          <a href="#" class="cart-wrap" aria-label="Carrito">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path
+                d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6"
+              />
+              <circle cx="9.5" cy="20.5" r="1.2" />
+              <circle cx="17.5" cy="20.5" r="1.2" />
+            </svg>
+            <span class="cart-badge">2</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a> / <a href="catalogo.html">Motos</a> /
+          <span id="bc-name">Modelo</span>
+        </div>
+        <span class="eyebrow" id="m-tag">Catálogo</span>
+        <h1 id="m-title">Cargando…</h1>
+        <p class="lede" id="m-desc"></p>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="wrap">
+        <div class="model-detail">
+          <div class="art-box" id="m-art"></div>
+          <div>
+            <h2 id="m-title-2"></h2>
+            <p class="desc" id="m-desc-2"></p>
+            <div class="spec-grid" id="m-specs"></div>
+            <div class="hero-ctas">
+              <a href="index.html#contacto" class="btn btn-primary"
+                >Consultar disponibilidad</a
+              >
+              <a href="ofertas.html" class="btn btn-ghost">Ver ofertas</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="model-tabs" id="m-tabs"></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <a href="index.html" class="logo">
+              <svg
+                class="mark"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M18 2 7 17h7l-3 13 14-17h-8l3-11z" fill="#2F6FED" />
+              </svg>
+              RUTA<span style="color: #2f6fed">VOLT</span>
+            </a>
+            <p>
+              Motos, equipamiento y financiación pensados para quienes no se
+              quedan quietos.
+            </p>
+          </div>
+          <div class="foot-col">
+            <h5>Compañía</h5>
+            <ul>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="foot-col">
+            <h5>Contacto</h5>
+            <ul>
+              <li><a href="#">Centro de ayuda</a></li>
+              <li><a href="#">Encontrá tu sucursal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <p>© 2026 RUTAVOLT. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const modelos = {
+        deportivas: {
+          nombre: "Deportivas",
+          tag: "04 modelos",
+          desc: "Máxima velocidad, mínima resistencia. Diseñadas para el asfalto, con aerodinámica agresiva y motores de alto régimen.",
+          specs: [
+            ["180", "km/h máx."],
+            ["4", "cilindros"],
+            ["999", "cc"],
+            ["165", "kg"],
+          ],
+          img: "img/deportiva.webp",
+        },
+        trail: {
+          nombre: "Trail / Adventure",
+          tag: "06 modelos",
+          desc: "Para caminos que no están en el mapa. Suspensiones de largo recorrido, tanques amplios y autonomía pensada para la ruta y el off-road.",
+          specs: [
+            ["150", "km/h máx."],
+            ["2", "cilindros"],
+            ["850", "cc"],
+            ["210", "kg"],
+          ],
+          img: "img/trail.webp",
+        },
+        naked: {
+          nombre: "Naked",
+          tag: "05 modelos",
+          desc: "Diseño crudo, potencia pura. Sin carenado, con una postura de manejo erguida y un carácter urbano sin filtros.",
+          specs: [
+            ["170", "km/h máx."],
+            ["3", "cilindros"],
+            ["790", "cc"],
+            ["175", "kg"],
+          ],
+          img: "img/naked.webp",
+        },
+        scooters: {
+          nombre: "Scooters",
+          tag: "03 modelos",
+          desc: "Agilidad urbana sin esfuerzo. Livianas, de bajo consumo y con espacio bajo asiento pensado para el día a día en la ciudad.",
+          specs: [
+            ["110", "km/h máx."],
+            ["1", "cilindro"],
+            ["150", "cc"],
+            ["118", "kg"],
+          ],
+          img: "img/scoters.webp",
+        },
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id") || "deportivas";
+      const m = modelos[id] || modelos.deportivas;
+
+      document.title = m.nombre + " — RUTAVOLT";
+      document.getElementById("bc-name").textContent = m.nombre;
+      document.getElementById("m-tag").textContent = m.tag;
+      document.getElementById("m-title").textContent = m.nombre;
+      document.getElementById("m-title-2").textContent = m.nombre;
+      document.getElementById("m-desc").textContent = m.desc;
+      document.getElementById("m-desc-2").textContent = m.desc;
+      const artEl = document.getElementById("m-art");
+
+      if (m.img) {
+        artEl.innerHTML = `
+    <img
+      src="${m.img}"
+      alt="${m.nombre}"
+      class="model-image"
+    >
+  `;
+      } else {
+        artEl.innerHTML = m.svg;
+      }
+
+      const specsEl = document.getElementById("m-specs");
+      m.specs.forEach(([valor, etiqueta]) => {
+        const div = document.createElement("div");
+        div.innerHTML = `<b>${valor}</b><span>${etiqueta}</span>`;
+        specsEl.appendChild(div);
+      });
+
+      const tabsEl = document.getElementById("m-tabs");
+      Object.keys(modelos).forEach((key) => {
+        const a = document.createElement("a");
+        a.href = `modelo.html?id=${key}`;
+        a.className = "model-tab" + (key === id ? " active" : "");
+        a.textContent = modelos[key].nombre;
+        tabsEl.appendChild(a);
+      });
+    </script>
+  </body>
+</html>
